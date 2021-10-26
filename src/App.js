@@ -13,7 +13,7 @@ function App() {
 
   //retrieve messages
   const retrieveMessages = async () => {
-    const response = await api.get("/messages?_page=2&_limit=3&_order=asc");
+    const response = await api.get("/messages");
     return response.data;
   };
 
@@ -32,11 +32,18 @@ function App() {
     setMessages([...messages, response.data]);
   };
 
-  const updateMessageHandler = async (messages) => {
-    const response = await api.put(`/messages/${messages.id}`, messages);
-    const { id, message, userId } = response.data;
+  const updateMessageHandler = async (updatedMessage) => {
+    console.log("messages: ", messages);
+    const response = await api.put(
+      `/messages/${updatedMessage.id}`,
+      updatedMessage
+    );
+    console.log("responsedata here: ", response);
+    const { id } = response.data;
+
     setMessages(
-      // message
+      // messages
+      // response.data
       messages.map((message) => {
         return message.id === id ? { ...response.data } : message;
       })
