@@ -22,10 +22,5 @@
       "message": "But what is API pagination? How can API pagination help your APIs function at peak performance? We’re going to tell you, in our complete guide to API pagination."
     }
   ],
-  "hasMorePages": [
-    {
-      "morePages": true,
-      "noMorePages": false
-    }
-  ]
+  "hasMorePages": true
 }
