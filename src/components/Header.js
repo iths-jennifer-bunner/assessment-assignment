@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="container">
       <Link to="/">
-        <h1>jennifer</h1>
+        <h1>messages</h1>
       </Link>
     </div>
   );

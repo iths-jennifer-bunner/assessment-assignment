@@ -16,10 +16,11 @@ body{
   background-color: #fa225e;
   color: #ffff;
   font-weight: 600;
+  font-size: 16px;
   border: 1px solid #ffff;
   padding:10px 20px;
   transition: all .5s ease-in-out;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Poppins', sans-serif;
 }
 .button:hover{
   transform: scale(1.1);
@@ -49,11 +50,12 @@ body{
     display: flex;
     justify-content: flex-end;
     padding-bottom: 2rem;
-    font-weight: 100;
+    font-weight: 300;
   }
   &__toolLinks{
     display: flex;
     justify-content: flex-end;
+   
   }
 }
 
@@ -67,7 +69,6 @@ a{
 }
 
 .form{
-  // border: 2px solid pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,12 +87,23 @@ textarea{
   border: none;
   border-radius: 10px;
   padding:10px 20px;
-  // margin-left: 10px !important;
 }
 
 .hidden{
   display: none;
 }
 h2, div{
-  font-family: 'Inconsolata', monospace;
+  // font-family: 'Inconsolata', monospace;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pagination-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-button{
+  border: none;
+  border-radius: 10px;
+  margin: 1rem;
 }

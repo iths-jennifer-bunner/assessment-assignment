@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const MessageCard = (props) => {
-  const { id, message, userId, timestamp } = props.message;
+  const { id, message, timestamp } = props.message;
   return (
     <div className="message-container">
       <div className="content">
@@ -21,7 +21,9 @@ const MessageCard = (props) => {
           className="message message__toolLinks--trash"
           src="https:cdn.lordicon.com/gsqxdxog.json"
           trigger="hover"
-          colors="primary:#000,secondary:#fa225e"
+          stroke="100"
+          // scale="60"
+          colors="primary:#fa225e,secondary:#ffffff"
           onClick={() => props.clickHandler(id)}
           style={{ cursor: "pointer", paddingRight: "10px" }}
         ></lord-icon>
@@ -30,7 +32,8 @@ const MessageCard = (props) => {
             className="message message__toolLinks--edit"
             src="https://cdn.lordicon.com/puvaffet.json"
             trigger="hover"
-            colors="primary:#000,secondary:#fa225e"
+            stroke="100"
+            colors="primary:#ffffff,secondary:#fa225e"
             // style={{ width: "250px", height: "250px" }}
           ></lord-icon>
         </Link>

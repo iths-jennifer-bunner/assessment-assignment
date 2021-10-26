@@ -21,7 +21,6 @@ class AddMessage extends React.Component {
     return (
       <div className="container">
         <form className="form" onSubmit={this.add}>
-          {" "}
           <h2>Add Message</h2>
           <div className="field">
             {/* <label>Message:</label> */}
@@ -36,16 +35,6 @@ class AddMessage extends React.Component {
             />
           </div>
           <div className="hidden">Nothing to say? </div>
-          {/* <div className="field">
-            <label>UserId</label>
-            <input
-              type="text"
-              name="userId"
-              placeholder="UserId"
-              value={this.state.userId}
-              onChange={(e) => this.setState({ userId: e.target.value })}
-            />
-          </div> */}
           <button className="button">Add message</button>
           <Link to="/">
             <p>Go back</p>

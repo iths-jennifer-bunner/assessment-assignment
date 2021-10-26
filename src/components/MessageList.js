@@ -4,7 +4,7 @@ import MessageCard from "./MessageCard";
 // import "./App.scss";
 
 const MessageList = (props) => {
-  console.log(props);
+  console.log("message-list: ", props);
 
   const deleteMessageHandler = (id) => {
     props.getMessageId(id);
@@ -21,6 +21,7 @@ const MessageList = (props) => {
         />
       );
     });
+
   return (
     <div className="container">
       <h2>Doing yoga on the boulders is the best way I to start my mornings</h2>
@@ -38,11 +39,23 @@ const MessageList = (props) => {
         <p>Video by Taryn Elliott from Pexels</p>
       </div>
       <div className="">{renderMessageList}</div>
-      <Link to="">
-        <div>
-          <p>show more comments</p>
-        </div>
-      </Link>
+
+      {/* <div id="pagination-control" className="pagination-container">
+        <button id="first" className="pagination-button">
+          ⇇
+        </button>
+        <button id="back" className="pagination-button">
+          ←
+        </button>
+        <div id="page-number" className="pagination-button"></div>
+        <button id="forward" className="pagination-button">
+          →
+        </button>
+        <button id="last" className="pagination-button">
+          ⇉
+        </button>
+      </div> */}
+
       <Link to="/add">
         <button className="button">Add Message</button>
       </Link>

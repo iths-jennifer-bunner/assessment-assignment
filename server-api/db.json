@@ -1,26 +1,31 @@
 {
   "messages": [
     {
-      "id": "214491de-3c4c-4520-b4df-b0d81c099e28",
-      "url": "localhost:3006/messages/99d705f6-6b07-4de3-b1fc-11e7ffdbf35f",
+      "id": "e3ee9153-3068-4514-a89f-8f3ae6e2eaf9",
+      "url": "localhost:3006/messages/e3ee9153-3068-4514-a89f-8f3ae6e2eaf9",
       "timestamp": "2021-10-26",
-      "userId": "759839d2-5b46-4567-b60f-f8df2da510e8",
-      "message": "Have you ever clicked through an image gallery? Or read through an extensive web tutorial broken up into multiple segments? Do you know the numbers on the bottom of the gallery or webpage?\n\nThat’s pagination.\n\nSitechecker.pro, a technical SEO website, defines pagination as “an ordinal numbering of pages, which is usually located at the top or bottom of the site pages.” API pagination just applies that principle to the realm of API design.\n\nAPI queries to dense databases could potentially return millions, if not billions, of results. There’s no telling what kind of drain that could put on your API. Pagination thus helps to limit the number of results to help keep network traffic in check.\n\nLet’s look at some of the most common API pagination methods before we look at coding examples."
+      "userId": "5f349fa0-08c6-4378-93da-41c36df2757e",
+      "message": "Dang, this is pretty hard. There’s a lot of support and everyone is cheerful, supportive and upbeat… but it’s very fast-paced and mostly independent. After an initial logjam, things calmed down and my labs are going smoothly. I’m enjoying the lectures and work, even though I’m worried I’m not participating enough. I think the real value added to this course will be the career services, which I’m eager to see and hear more about. Time for a Zoom discussion"
     },
     {
-      "id": "06d12aee-9c5f-45cd-9a07-5033208f6825",
-      "url": "localhost:3006/messages/00d605fe-20f6-4553-a1db-136ac23de540",
+      "id": "914ca948-7586-4662-b6c5-aef7fd20e9f0",
+      "url": "localhost:3006/messages/914ca948-7586-4662-b6c5-aef7fd20e9f0",
       "timestamp": "2021-10-26",
-      "userId": "ebd6f63a-fdc5-48bb-8d49-a9ed44448119",
-      "message": "These expectations don’t necessarily line up with the technical requirements of an API. In the era of big data and analytics, APIs are dealing with larger amounts of data in their backend than ever before. To truly stand their ground in today’s digital economy, APIs must be optimized for peak efficiency. API pagination is a key strategy for making sure your APIs run smoothly and effectively."
+      "userId": "07e660f1-5bbd-410e-9cca-ed29e36f4fe8",
+      "message": "I’m not a gambling man — I work too hard for my money to give it away — but I am an avid poker player. I love poker because it’s a game of skill disguised as a game of chance. The engine of poker, its beating heart, is a complex…",
+      "open": true
     },
     {
-      "id": "7559e4b4-d96e-4692-898a-bc61a357e5d9",
-      "url": "localhost:3006/messages/3aaf5b13-67cf-406a-a731-9491a656c049",
+      "id": "97706fa6-9f3e-46dc-a613-530096815660",
+      "message": "JavaScript is fast — so fast that no human can reasonably tell it’s being run at all! HTTP requests, on the other hand, are slow as molasses by comparison. The delay isn’t terribly noticeable on a request for fifty objects, but what about a request for fifty thousand or fifty million objects???",
+      "userId": "6e936bb6-dfc7-4be2-9f0f-a69aaff1ec4a",
       "timestamp": "2021-10-26",
-      "userId": "853ef359-169c-4dd6-83fc-7390ca4da012",
-      "message": "But what is API pagination? How can API pagination help your APIs function at peak performance? We’re going to tell you, in our complete guide to API pagination."
+      "url": "localhost:3006/messages/97706fa6-9f3e-46dc-a613-530096815660"
     }
   ],
-  "hasMorePages": true
+  "hasMorePages": [
+    {
+      "hasMorePages": true
+    }
+  ]
 }

@@ -11,7 +11,7 @@ import EditMessage from "./components/EditMessage";
 function App() {
   const [messages, setMessages] = useState([]);
 
-  //retrieve messages
+  //-----------GET "post"-----------
   const retrieveMessages = async () => {
     const response = await api.get("/messages");
     return response.data;
@@ -19,37 +19,37 @@ function App() {
 
   const addMessageHandler = async (message) => {
     console.log(message);
+    const id = uuid();
     const request = {
-      id: uuid(),
-      url: `localhost:3006/messages/${uuid()}`,
+      id: id,
+      url: `localhost:3006/messages/` + id,
       timestamp: new Date().toLocaleDateString(),
       userId: uuid(),
       ...message,
     };
 
+    //-----------POST "post"-----------
     const response = await api.post("/messages", request);
     console.log(response);
     setMessages([...messages, response.data]);
   };
 
+  //-----------PUT (edit) "post"-----------
   const updateMessageHandler = async (updatedMessage) => {
     console.log("messages: ", messages);
     const response = await api.put(
       `/messages/${updatedMessage.id}`,
       updatedMessage
     );
-    console.log("responsedata here: ", response);
     const { id } = response.data;
-
     setMessages(
-      // messages
-      // response.data
       messages.map((message) => {
         return message.id === id ? { ...response.data } : message;
       })
     );
   };
 
+  //-----------DELETE "post"-----------
   const removeMessageHandler = async (id) => {
     await api.delete(`/messages/${id}`);
     const newMessageList = messages.filter((message) => {
@@ -67,7 +67,6 @@ function App() {
     getAllMessages();
   }, []);
 
-  useEffect(() => {}, [messages]);
   return (
     <div>
       <Router>
@@ -81,6 +80,8 @@ function App() {
                 {...props}
                 messages={messages}
                 getMessageId={removeMessageHandler}
+                {...props}
+                addMessageHandler={addMessageHandler}
               />
             )}
           />
