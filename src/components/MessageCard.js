@@ -6,15 +6,12 @@ const MessageCard = (props) => {
   return (
     <div className="message-container">
       <div className="content">
-        <Link
-          to={{
-            pathname: `/messages/${id}`,
-            state: { message: props.message },
-          }}
-        >
-          <div className="message message__date">{timestamp}</div>
-          <div className="message"> {message}</div>
-        </Link>
+        <div className="message message__date">
+          <p className="timestamp">{timestamp}</p>
+        </div>
+        <div className="message">
+          <p> {message}</p>
+        </div>
       </div>
       <div className="message__toolLinks">
         <lord-icon

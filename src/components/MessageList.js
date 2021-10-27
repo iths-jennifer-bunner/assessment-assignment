@@ -27,16 +27,15 @@ const MessageList = (props) => {
       <h2>Doing yoga on the boulders is the best way I to start my mornings</h2>
       <div className="video-container">
         <video
-          width="1000"
           controls={true}
-          // autoPlay={true}
           muted={true}
           playsInline
           src="/assets/taryn-elliott.mp4"
+          className="video-container__video"
         >
           Your browser does not support the video tag.
         </video>
-        <p>Video by Taryn Elliott from Pexels</p>
+        <h5>Video by Taryn Elliott from Pexels</h5>
       </div>
       <div className="">{renderMessageList}</div>
 

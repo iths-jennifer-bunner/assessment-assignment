@@ -23,10 +23,9 @@ class AddMessage extends React.Component {
         <form className="form" onSubmit={this.add}>
           <h2>Add Message</h2>
           <div className="field">
-            {/* <label>Message:</label> */}
             <textarea
-              rows="5"
-              cols="55"
+              // rows="5"
+              // cols="55"
               type="text"
               name="message"
               placeholder="Message"

@@ -1,27 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class EditContact extends React.Component {
   constructor(props) {
     super(props);
-    const { id, message, userId, timestamp, url } =
-      props.location.state.contact;
+    const { id, message, timestamp } = props.location.state.contact;
     this.state = {
       id,
       message,
-      userId,
       timestamp,
-      url,
     };
   }
 
   update = (e) => {
     e.preventDefault();
-    if (this.state.message === "" || this.state.userId === "") {
-      alert("ALl the fields are mandatory!");
+    if (this.state.message === "") {
       return;
     }
     this.props.updateMessageHandler(this.state);
-    this.setState({ message: "", userId: "" });
+    this.setState({ message: "", timestamp: "" });
     this.props.history.push("/");
   };
 
@@ -39,7 +36,12 @@ class EditContact extends React.Component {
               name="message"
               placeholder="Message"
               value={this.state.message}
-              onChange={(e) => this.setState({ message: e.target.value })}
+              onChange={(e) =>
+                this.setState({
+                  message: e.target.value,
+                  timestamp: new Date().toUTCString(),
+                })
+              }
             />
           </div>
           {/* <div className="field">
@@ -53,6 +55,9 @@ class EditContact extends React.Component {
             />
           </div> */}
           <button className="button">Update</button>
+          <Link to="/">
+            <p>Go back</p>
+          </Link>
         </form>
       </div>
     );

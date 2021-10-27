@@ -13,7 +13,7 @@ function App() {
 
   //-----------GET "post"-----------
   const retrieveMessages = async () => {
-    const response = await api.get("/messages");
+    const response = await api.get("/messages?_sort=timestamp&_order=desc");
     return response.data;
   };
 
@@ -23,7 +23,7 @@ function App() {
     const request = {
       id: id,
       url: `localhost:3006/messages/` + id,
-      timestamp: new Date().toLocaleDateString(),
+      timestamp: new Date().toUTCString(),
       userId: uuid(),
       ...message,
     };
