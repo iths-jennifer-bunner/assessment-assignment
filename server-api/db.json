@@ -1,26 +1,14 @@
 {
   "messages": [
     {
-      "id": "e3ee9153-3068-4514-a89f-8f3ae6e2eaf9",
-      "url": "localhost:3006/messages/e3ee9153-3068-4514-a89f-8f3ae6e2eaf9",
-      "timestamp": "2021-10-26",
-      "userId": "5f349fa0-08c6-4378-93da-41c36df2757e",
-      "message": "Dang, this is pretty hard. There’s a lot of support and everyone is cheerful, supportive and upbeat… but it’s very fast-paced and mostly independent. After an initial logjam, things calmed down and my labs are going smoothly. I’m enjoying the lectures and work, even though I’m worried I’m not participating enough. I think the real value added to this course will be the career services, which I’m eager to see and hear more about. Time for a Zoom discussion"
+      "id": "bfe91233-13f6-4167-8d1c-ca7cba79da5c",
+      "message": "With your Backend taken care, its time to use those defined routes into your Frontend framework and add interactions to your App. This essentially creates our “user experience”. This article hopes you already know the basics of React as we will focus more on how to build the Example App with the already established concepts of the framework",
+      "timestamp": "Wed, 27 Oct 2021 12:27:35 GMT"
     },
     {
-      "id": "914ca948-7586-4662-b6c5-aef7fd20e9f0",
-      "url": "localhost:3006/messages/914ca948-7586-4662-b6c5-aef7fd20e9f0",
-      "timestamp": "2021-10-26",
-      "userId": "07e660f1-5bbd-410e-9cca-ed29e36f4fe8",
-      "message": "I’m not a gambling man — I work too hard for my money to give it away — but I am an avid poker player. I love poker because it’s a game of skill disguised as a game of chance. The engine of poker, its beating heart, is a complex…",
-      "open": true
-    },
-    {
-      "id": "97706fa6-9f3e-46dc-a613-530096815660",
-      "message": "JavaScript is fast — so fast that no human can reasonably tell it’s being run at all! HTTP requests, on the other hand, are slow as molasses by comparison. The delay isn’t terribly noticeable on a request for fifty objects, but what about a request for fifty thousand or fifty million objects???",
-      "userId": "6e936bb6-dfc7-4be2-9f0f-a69aaff1ec4a",
-      "timestamp": "2021-10-26",
-      "url": "localhost:3006/messages/97706fa6-9f3e-46dc-a613-530096815660"
+      "id": "c651e054-0f4c-4269-bf58-b8da33f0f0b0",
+      "message": "If you manage to stay awake long enough to follow me to the end of this blog post, hopefully you’ll deepen your understanding of the request-response cycle in API-based web applications. That knowledge will give you the confidence necessary to do way more than just displaying objects on a page when you’re building your own API-based app.",
+      "timestamp": "Wed, 27 Oct 2021 12:28:14 GMT"
     }
   ],
   "hasMorePages": [
