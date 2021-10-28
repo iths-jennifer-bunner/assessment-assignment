@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { uuid } from "uuidv4";
 import api from "./api/messages";
@@ -35,19 +35,23 @@ function App() {
   };
 
   //-----------PUT (edit) "post"-----------
-  const updateMessageHandler = async (updatedMessage) => {
-    console.log("messages: ", messages);
-    const response = await api.put(
-      `/messages/${updatedMessage.id}`,
-      updatedMessage
-    );
-    const { id } = response.data;
-    setMessages(
-      messages.map((message) => {
-        return message.id === id ? { ...response.data } : message;
-      })
-    );
-  };
+
+  const updateMessageHandler = useCallback(
+    async (updatedMessage) => {
+      // console.log("messages: ", messages);
+      const response = await api.put(
+        `/messages/${updatedMessage.id}`,
+        updatedMessage
+      );
+      const { id } = response.data;
+      setMessages(
+        messages.map((message) => {
+          return message.id === id ? { ...response.data } : message;
+        })
+      );
+    },
+    [messages]
+  );
 
   //-----------DELETE "post"-----------
   const removeMessageHandler = async (id) => {

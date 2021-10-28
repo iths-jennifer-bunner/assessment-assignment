@@ -35,7 +35,7 @@ const MessageList = (props) => {
         >
           Your browser does not support the video tag.
         </video>
-        <h5>Video by Taryn Elliott from Pexels</h5>
+        <h4>Video by Taryn Elliott from Pexels</h4>
       </div>
       <div className="">{renderMessageList}</div>
 

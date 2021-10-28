@@ -75,14 +75,15 @@ body{
 
 .button{
   border-radius: 10px;
-  background-color: #fa225e;
-  color: #ffff;
+  background-color: #FF6892;
+  color: #212529;
   font-weight: 600;
   font-size: 16px;
   border: 1px solid #ffff;
   padding:10px 20px;
   transition: all .5s ease-in-out;
   font-family: 'Poppins', sans-serif;
+  z-index: 1;
 }
 .button:hover{
   transform: scale(1.1);
@@ -147,6 +148,7 @@ box-shadow: 0 0 8px rgba(#fff,.1);
 a{
   color: #fa225e ;
   text-decoration: none ;
+  z-index: 1;
 }
 // ----------------------Form--------
 .form{
@@ -166,6 +168,7 @@ a{
   justify-content: center;
   align-items: center;
   width: 300px;
+
   @include md {
     width: 500px;
   }
@@ -180,7 +183,51 @@ textarea{
   box-sizing: border-box;
   width: 100%;
   height: 200px;
+z-index: 1;
+}
+.formBlobBody {
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+.smallBlob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: smallMove 25s ease-in-out infinite;
+}
+.smallCircle{
+  border-radius: 50%;
+  width: 10rem;
+  height:10rem;
+  background: radial-gradient(90% 90% at 58.75% 34%, #FF0349 0%, #FA6322 100%);
+  
 
+  @include md{
+    width: 20rem;
+    height:20rem;
+  }
+}
+@keyframes smallMove {
+  0% {
+    transform:  translate(-10px, -90px);
+  }
+  38% {
+    transform:  translate(25vw, 10vh);
+  }
+  40% {
+    transform:  translate(25vw, 10vh);
+  }
+  78% {
+    transform:  translate(-5vw, 40vh);
+  }
+  80% {
+    transform:  translate(-5vw, 40vh);
+  }
+  100% {
+    transform:  translate(-10px, -90px);
+  }
 }
 // -----------------------------------
 .hidden{
@@ -188,31 +235,30 @@ textarea{
 }
 p{
   font-family: 'Poppins', sans-serif;
+  color: #f6cabf;
+  letter-spacing: 1px;
 }
 h1{
   font-family: 'Poppins', sans-serif;
-  font-size: 42px;
-  color: #fff;
+  font-size: 48px;
+  font-weight:300;
+  color: #f6cabf;
+  letter-spacing: 2px;
+  
 }
-h2, .timestamp{
+h2,h3, .timestamp{
   font-family: 'Inconsolata', monospace;
-  // font-family: 'Poppins', sans-serif;
+  color: #f6cabf;
+  letter-spacing: 1px;
+  z-index: 1;
 }
-h5{
-  font-size: 10px;
+h4{
   font-weight: 400;
   font-family: 'Inconsolata', monospace;
+  color: #f6cabf;
+  letter-spacing: 1px;
 }
-// .pagination-container{
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .pagination-button{
-//   border: none;
-//   border-radius: 10px;
-//   margin: 1rem;
-// }
+
 // ------------HEADER----------------
 .header-container{
   display: flex;
@@ -226,32 +272,39 @@ h5{
 }
 
 .blobBody {
-  // margin: 0;
   height: 30vh;
   overflow: hidden;
   position: relative;
-  // display: flex;
   align-items: center;
   flex-direction: column;
 }
+
 .blob {
   position: absolute;
   top: 0;
   left: 0;
   animation: move 35s ease-in-out infinite;
 }
+
 .circle{
   border-radius: 50%;
-  width: 30rem;
-  height:30rem;
+  width: 10rem;
+  height:10rem;
   background: radial-gradient(90% 90% at 58.75% 34%, #FF0349 0%, #FA6322 100%);
+
+  @include md{
+    width: 30rem;
+    height:30rem;
+  }
 }
+
 .container-title{
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #f6cabf;
 }
 @keyframes move {
   0% {

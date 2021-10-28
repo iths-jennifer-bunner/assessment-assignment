@@ -2,13 +2,23 @@
   "messages": [
     {
       "id": "bfe91233-13f6-4167-8d1c-ca7cba79da5c",
-      "message": "With your Backend taken care, its time to use those defined routes into your Frontend framework and add interactions to your App. This essentially creates our “user experience”. This article hopes you already know the basics of React as we will focus more on how to build the Example App with the already established concepts of the framework",
-      "timestamp": "Wed, 27 Oct 2021 12:27:35 GMT"
+      "message": "With your Backend taken care, its time to use those defined routes into your Frontend framework and add interactions to your App. This essentially creates our “user experience”. This article hopes you already know the basics of React as we will focus more on how to build the Example App with the already established concepts of the framework...",
+      "timestamp": "Wed, 27 Oct 2021 19:21:54 GMT"
     },
     {
       "id": "c651e054-0f4c-4269-bf58-b8da33f0f0b0",
-      "message": "If you manage to stay awake long enough to follow me to the end of this blog post, hopefully you’ll deepen your understanding of the request-response cycle in API-based web applications. That knowledge will give you the confidence necessary to do way more than just displaying objects on a page when you’re building your own API-based app.",
-      "timestamp": "Wed, 27 Oct 2021 12:28:14 GMT"
+      "message": "If you manage to stay awake long enough to follow me to the end of this blog post, hopefully you’ll deepen your understanding of the request-response cycle in API-based web applications. That knowledge will give you the confidence necessary to do way more than just displaying objects on a page when you’re building your own API-based app....",
+      "timestamp": "Thu, 28 Oct 2021 10:11:20 GMT"
+    },
+    {
+      "id": "30daa91b-585b-412b-935d-1c0287d31baa",
+      "message": "CRUD as you’ll know stands for Create, Read, Update and Delete. The next sections will cover these aspects in details.....................",
+      "timestamp": "Thu, 28 Oct 2021 07:05:59 GMT"
+    },
+    {
+      "id": "abbf59bd-5dbf-4fc5-964a-0a87f8a60917",
+      "message": "R — Read\nIn HTTP language, Read is called GET . We don’t require React to make a GET request, we use the FETCH API for that. React comes into action when we have to Render the output received from the FETCH API call.",
+      "timestamp": "Thu, 28 Oct 2021 07:05:32 GMT"
     }
   ],
   "hasMorePages": [

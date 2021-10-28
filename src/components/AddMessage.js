@@ -20,9 +20,9 @@ class AddMessage extends React.Component {
   render() {
     return (
       <div className="container">
-        <form className="form" onSubmit={this.add}>
+        <form className="form formBlobBody" onSubmit={this.add}>
           <h2>Add Message</h2>
-          <div className="field">
+          <div className="field ">
             <textarea
               // rows="5"
               // cols="55"
@@ -32,6 +32,9 @@ class AddMessage extends React.Component {
               value={this.state.message}
               onChange={(e) => this.setState({ message: e.target.value })}
             />
+          </div>
+          <div className="smallBlob">
+            <div className="smallCircle"></div>
           </div>
           <div className="hidden">Nothing to say? </div>
           <button className="button">Add message</button>

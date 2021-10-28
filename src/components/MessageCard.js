@@ -20,7 +20,7 @@ const MessageCard = (props) => {
           trigger="hover"
           stroke="100"
           // scale="60"
-          colors="primary:#fa225e,secondary:#ffffff"
+          colors="primary:#FF0047,secondary:#ffffff"
           onClick={() => props.clickHandler(id)}
           style={{ cursor: "pointer", paddingRight: "10px" }}
         ></lord-icon>
@@ -30,7 +30,7 @@ const MessageCard = (props) => {
             src="https://cdn.lordicon.com/puvaffet.json"
             trigger="hover"
             stroke="100"
-            colors="primary:#ffffff,secondary:#fa225e"
+            colors="primary:#ffffff,secondary:#FF0047"
             // style={{ width: "250px", height: "250px" }}
           ></lord-icon>
         </Link>
