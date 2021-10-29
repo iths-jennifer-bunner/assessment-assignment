@@ -19,13 +19,6 @@
       "id": "abbf59bd-5dbf-4fc5-964a-0a87f8a60917",
       "message": "R — Read\nIn HTTP language, Read is called GET . We don’t require React to make a GET request, we use the FETCH API for that. React comes into action when we have to Render the output received from the FETCH API call.",
       "timestamp": "Thu, 28 Oct 2021 07:05:32 GMT"
-    },
-    {
-      "id": "954b39c2-3b16-4e9d-9d87-46e23d6f1310",
-      "url": "localhost:3006/messages/954b39c2-3b16-4e9d-9d87-46e23d6f1310",
-      "timestamp": "Fri, 29 Oct 2021 07:21:47 GMT",
-      "userId": "71187308-d0f2-4024-9a4e-708a7f94ef10",
-      "message": "test"
     }
   ],
   "hasMorePages": [

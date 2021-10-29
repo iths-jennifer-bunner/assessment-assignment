@@ -1,7 +1,16 @@
+.env---------------
+
 HOST=localhost
 
 NODE_ENV=server.js
 PORT=3006
 DATABASE_URL=https://my-little-message-app.herokuapp.com/
 
-web:node server.js
+
+
+HOST=localhost/my-little-message-app.herokuapp.com
+
+
+procfile---------
+
+web:json-server -p 3006 -w db.json (starta lokalt)
