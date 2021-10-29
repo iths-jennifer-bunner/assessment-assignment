@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3006;
 // router.connect({
 //   databaseURL: process.env.DATABASE_URL,
 // });
-server.use("./db.json", middlewares, router);
+server.use("/*", middlewares, router);
 server.use(express.static(path.join(__dirname, "./build")));
 
 server.get("/*", function (req, res) {
