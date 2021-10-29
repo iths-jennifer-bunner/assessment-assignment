@@ -1,8 +1,14 @@
 const jsonServer = require("json-server");
 const server = jsonServer.create();
+require("dotenv").config();
 // const path = require("path");
 // const express = require("express");
 const router = jsonServer.router("./db.json");
+require("dotenv").config();
+
+router.connect({
+  databaseURL: process.env.DATABASE_URL,
+});
 
 const middlewares = jsonServer.defaults();
 const PORT = process.env.PORT || 3006;
