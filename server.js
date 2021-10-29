@@ -4,7 +4,6 @@ require("dotenv").config();
 // const path = require("path");
 // const express = require("express");
 const router = jsonServer.router("./db.json");
-require("dotenv").config();
 
 router.connect({
   databaseURL: process.env.DATABASE_URL,
@@ -21,11 +20,11 @@ server.use(router);
 //   res.sendFile(path.join(__dirname, "/../build/index.html"));
 // });
 
-server.use(
-  jsonServer.rewriter({
-    "/api/*": "/$1",
-  })
-);
+// server.use(
+//   jsonServer.rewriter({
+//     "/api/*": "/$1",
+//   })
+// );
 server.listen(PORT, () => {
   console.log("Server is running:", PORT);
 });
