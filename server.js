@@ -14,7 +14,7 @@ server.use("./db.json", middlewares, router);
 server.use(express.static(path.join(__dirname, "build")));
 
 server.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, "/../build", "index.html"));
+  res.sendFile(path.join(__dirname, "./build", "index.html"));
 });
 // server.use(middlewares);
 
