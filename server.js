@@ -18,7 +18,7 @@ server.get("/*", function (req, res) {
 });
 // server.use(middlewares);
 
-// server.use(router);
+server.use(router);
 
 // server.use(
 //   jsonServer.rewriter({

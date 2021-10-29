@@ -1,1 +1,1 @@
-web:json-server -w db.json
+web:node server.js
