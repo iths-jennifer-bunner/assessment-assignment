@@ -20,11 +20,6 @@ server.get("/*", function (req, res) {
 
 server.use(router);
 
-// server.use(
-//   jsonServer.rewriter({
-//     "/api/*": "/$1",
-//   })
-// );
 server.listen(PORT, () => {
   console.log("Server is running:", PORT);
 });
