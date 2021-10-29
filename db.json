@@ -21,11 +21,11 @@
       "timestamp": "Thu, 28 Oct 2021 07:05:32 GMT"
     },
     {
-      "id": "707a9bbf-44ba-456f-a3ea-7907847607ae",
-      "url": "localhost:3006/messages/707a9bbf-44ba-456f-a3ea-7907847607ae",
-      "timestamp": "Thu, 28 Oct 2021 21:39:41 GMT",
-      "userId": "4eccf10e-849f-4620-abb9-c416deb1ea4a",
-      "message": "hej där"
+      "id": "954b39c2-3b16-4e9d-9d87-46e23d6f1310",
+      "url": "localhost:3006/messages/954b39c2-3b16-4e9d-9d87-46e23d6f1310",
+      "timestamp": "Fri, 29 Oct 2021 07:21:47 GMT",
+      "userId": "71187308-d0f2-4024-9a4e-708a7f94ef10",
+      "message": "test"
     }
   ],
   "hasMorePages": [
