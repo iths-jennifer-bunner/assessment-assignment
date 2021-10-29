@@ -20,7 +20,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "prestart": "node server.js",
+    "prestart": "json-server -p 3006 -w db.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
