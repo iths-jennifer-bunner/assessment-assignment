@@ -17,7 +17,7 @@ You will also see any lint errors in the console.
 To start the json-server:
 
 ### `npm start` 
-go to "server-api" folder and run `npm start` 
+run `json-server -p 3006 -w db.json` 
 
 
 ### `npm test`
