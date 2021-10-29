@@ -4,13 +4,13 @@ const server = jsonServer.create();
 const path = require("path");
 const express = require("express");
 const middlewares = jsonServer.defaults();
-const router = jsonServer.router("db.json");
+const router = jsonServer.router("./db.json");
 const PORT = process.env.PORT || 3006;
 
 // router.connect({
 //   databaseURL: process.env.DATABASE_URL,
 // });
-server.use("/db", middlewares, router);
+server.use("./db.json", middlewares, router);
 server.use(express.static(path.join(__dirname, "build")));
 
 server.get("/*", function (req, res) {
