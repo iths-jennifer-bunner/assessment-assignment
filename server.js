@@ -15,6 +15,11 @@ server.use(router);
 //   res.sendFile(path.join(__dirname, "/../build/index.html"));
 // });
 
+server.use(
+  jsonServer.rewriter({
+    "/api/*": "/$1",
+  })
+);
 server.listen(PORT, () => {
   console.log("Server is running:", PORT);
 });
