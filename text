@@ -14,3 +14,6 @@ HOST=localhost/my-little-message-app.herokuapp.com
 procfile---------
 
 web:json-server -p 3006 -w db.json (starta lokalt)
+
+
+ "concurrently \"react-scripts start\" \"json-server -p 3006 -w db.json\"",
