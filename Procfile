@@ -1,1 +1,1 @@
-web:json-server -p 3006 -w db.json
+web:json-server -w db.json
