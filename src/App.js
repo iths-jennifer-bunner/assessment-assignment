@@ -22,7 +22,7 @@ function App() {
     const id = uuid();
     const request = {
       id: id,
-      url: `localhost:3006/messages/` + id,
+      url: `https://my-little-message-app.herokuapp.com/messages/` + id,
       timestamp: new Date().toUTCString(),
       userId: uuid(),
       ...message,

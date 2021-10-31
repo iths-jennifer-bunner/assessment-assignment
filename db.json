@@ -2,22 +2,22 @@
   "messages": [
     {
       "id": "bfe91233-13f6-4167-8d1c-ca7cba79da5c",
-      "message": "With your Backend taken care, its time to use those defined routes into your Frontend framework and add interactions to your App. This essentially creates our “user experience”. This article hopes you already know the basics of React as we will focus more on how to build the Example App with the already established concepts of the framework...",
+      "message": "Mindfulness has always been an essential aspect of the physical practice of yoga. The difference between Mindful Yoga and the wide variety of yoga practices out there is that with Mindful Yoga, the main focus is on mind-body awareness, as opposed to alignment details and the exact physical posture. The point is to cultivate mindfulness, using asana as the vehicle in which to do so.",
       "timestamp": "Wed, 27 Oct 2021 19:21:54 GMT"
     },
     {
       "id": "c651e054-0f4c-4269-bf58-b8da33f0f0b0",
-      "message": "If you manage to stay awake long enough to follow me to the end of this blog post, hopefully you’ll deepen your understanding of the request-response cycle in API-based web applications. That knowledge will give you the confidence necessary to do way more than just displaying objects on a page when you’re building your own API-based app....",
+      "message": "A relatively new form of yoga called Mindful Yoga, applies traditional Buddhist mindfulness teachings to the physical practice of yoga, offering even deeper insights into the mind and a truly life-changing approach to your practice.",
       "timestamp": "Thu, 28 Oct 2021 10:11:20 GMT"
     },
     {
       "id": "30daa91b-585b-412b-935d-1c0287d31baa",
-      "message": "CRUD as you’ll know stands for Create, Read, Update and Delete. The next sections will cover these aspects in details.....................",
+      "message": "Much is known about the benefits of mindfulness and the benefits of yoga, but what happens when you combine the two together?",
       "timestamp": "Thu, 28 Oct 2021 07:05:59 GMT"
     },
     {
       "id": "abbf59bd-5dbf-4fc5-964a-0a87f8a60917",
-      "message": "R — Read\nIn HTTP language, Read is called GET . We don’t require React to make a GET request, we use the FETCH API for that. React comes into action when we have to Render the output received from the FETCH API call.",
+      "message": "Merging the practice of mindfulness with the practice of yoga has led the way to a new and more intensive form of “Mindful Yoga.” Mindful yoga applies traditional Buddhist mindfulness teachings to the physical practice of yoga; it is the holistic approach of connecting your mind to your breath. Before we go any further, let us start with a brief overview of mindfulness and yoga, on their own.",
       "timestamp": "Thu, 28 Oct 2021 07:05:32 GMT"
     }
   ],
