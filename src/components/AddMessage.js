@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./App.scss";
 
 class AddMessage extends React.Component {
   state = {
@@ -10,7 +9,6 @@ class AddMessage extends React.Component {
   add = (e) => {
     e.preventDefault();
     if (this.state.message === "") {
-      // alert("ALl the fields are mandatory!");
       return;
     }
     this.props.addMessageHandler(this.state);
@@ -24,8 +22,6 @@ class AddMessage extends React.Component {
           <h2>Add Message</h2>
           <div className="field ">
             <textarea
-              // rows="5"
-              // cols="55"
               type="text"
               name="message"
               placeholder="Message"

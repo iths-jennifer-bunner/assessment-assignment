@@ -20,9 +20,14 @@ const MessageCard = (props) => {
           trigger="hover"
           stroke="100"
           // scale="60"
-          colors="primary:#FF0047,secondary:#ffffff"
+          colors="primary:#ffffff,secondary:#FF6892"
           onClick={() => props.clickHandler(id)}
-          style={{ cursor: "pointer", paddingRight: "10px" }}
+          style={{
+            cursor: "pointer",
+            paddingRight: "10px",
+            width: "35px",
+            height: "35px",
+          }}
         ></lord-icon>
         <Link to={{ pathname: `/edit`, state: { contact: props.message } }}>
           <lord-icon
@@ -30,8 +35,8 @@ const MessageCard = (props) => {
             src="https://cdn.lordicon.com/puvaffet.json"
             trigger="hover"
             stroke="100"
-            colors="primary:#ffffff,secondary:#FF0047"
-            // style={{ width: "250px", height: "250px" }}
+            colors="primary:#ffffff,secondary:#FF6892"
+            style={{ width: "35px", height: "35px" }}
           ></lord-icon>
         </Link>
       </div>

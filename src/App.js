@@ -38,7 +38,6 @@ function App() {
 
   const updateMessageHandler = useCallback(
     async (updatedMessage) => {
-      // console.log("messages: ", messages);
       const response = await api.put(
         `/messages/${updatedMessage.id}`,
         updatedMessage

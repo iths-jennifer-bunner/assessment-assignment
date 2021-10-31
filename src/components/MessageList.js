@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MessageCard from "./MessageCard";
-// import "./App.scss";
 
 const MessageList = (props) => {
   console.log("message-list: ", props);
@@ -38,23 +37,6 @@ const MessageList = (props) => {
         <h4>Video by Taryn Elliott from Pexels</h4>
       </div>
       <div className="">{renderMessageList}</div>
-
-      {/* <div id="pagination-control" className="pagination-container">
-        <button id="first" className="pagination-button">
-          ⇇
-        </button>
-        <button id="back" className="pagination-button">
-          ←
-        </button>
-        <div id="page-number" className="pagination-button"></div>
-        <button id="forward" className="pagination-button">
-          →
-        </button>
-        <button id="last" className="pagination-button">
-          ⇉
-        </button>
-      </div> */}
-
       <Link to="/add">
         <button className="button">Add Message</button>
       </Link>

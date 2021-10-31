@@ -28,7 +28,6 @@ class EditContact extends React.Component {
         <form className="form" onSubmit={this.update}>
           <h2>Edit Message</h2>
           <div className="field">
-            {/* <label>Message</label> */}
             <textarea
               rows="5"
               cols="55"
@@ -44,16 +43,6 @@ class EditContact extends React.Component {
               }
             />
           </div>
-          {/* <div className="field">
-            <label>User Id</label>
-            <input
-              type="text"
-              name="userId"
-              placeholder="User Id"
-              value={this.state.userId}
-              onChange={(e) => this.setState({ userId: e.target.value })}
-            />
-          </div> */}
           <button className="button">Update</button>
           <Link to="/">
             <p>Go back</p>
