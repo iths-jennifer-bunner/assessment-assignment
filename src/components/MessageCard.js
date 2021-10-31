@@ -16,7 +16,7 @@ const MessageCard = (props) => {
       <div className="message__toolLinks">
         <lord-icon
           className="message message__toolLinks--trash"
-          src="https:cdn.lordicon.com/gsqxdxog.json"
+          src="https://cdn.lordicon.com/gsqxdxog.json"
           trigger="hover"
           stroke="100"
           // scale="60"
