@@ -13,7 +13,8 @@ function App() {
 
   //-----------GET "post"-----------
   const retrieveMessages = async () => {
-    const response = await api.get("/messages?_sort=timestamp&_order=desc");
+    const response = await api.get("/messages");
+    // const response = await api.get("/messages?_sort=timestamp&_order=desc");
     return response.data;
   };
 
@@ -22,7 +23,7 @@ function App() {
     const id = uuid();
     const request = {
       id: id,
-      url: `https://my-little-message-app.herokuapp.com/messages/` + id,
+      url: `https://my-little-message-app.herokuapp.com/api/messages/` + id,
       timestamp: new Date().toUTCString(),
       userId: uuid(),
       ...message,

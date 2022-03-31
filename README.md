@@ -9,16 +9,16 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [https://my-little-message-app.herokuapp.com](https://my-little-message-app.herokuapp.com) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-To start the json-server:
+To start the project during development:
 
-### `npm start` 
-run `json-server -p 3006 -w db.json` 
+### `npm start`
 
+in package.json start: `concurrently \"react-scripts start\" \"json-server -p 3006 -w db.json\"`,
 
 ### `npm test`
 

@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import MessageCard from "./MessageCard";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import MessageCard from './MessageCard';
 
 const MessageList = (props) => {
-  console.log("message-list: ", props);
+  console.log('message-list: ', props);
 
   const deleteMessageHandler = (id) => {
     props.getMessageId(id);
